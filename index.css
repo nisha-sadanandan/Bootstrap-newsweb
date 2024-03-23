@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  --Soft-red: hsl(5, 85%, 63%);
+  --Soft-orange: hsl(35, 77%, 62%);
+
+}
+
+
+.body {
+    font-family: "Inter";
+  
+}
+
+  .container {
+    margin: 0 auto;
+    max-width:1240px;
+    padding: 0 30px;
+} 
+
+.call_out .button {
+    background-color:hsl(5, 85%, 63%) ;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    transition:background-color 0.5s ease;
+    margin-top:1rem;
+  }
+  
+  .call_out p{margin-top:1rem;
+           font-size: 1rem;}
+
+.button:hover {
+    background-color:  hsl(240, 100%, 5%);
+  }
+
+  .links ul li a {
+    color:hsl(236, 13%, 42%) ;
+    font-family: "Inter";
+    transition: 0.5s color ease;
+    }
+
+    .links ul li a:hover {
+      color:hsl(5, 85%, 63%) ;
+  }
+ 
+  .mainhead{
+    font-weight: 900;
+    font-size:3.5rem;
+  }
+  
+  .title{color: white;
+     font-size:1.5rem;}
+
+  .article a:hover{
+   color:var(--Soft-orange);
+  }
+  
+  .content h3:hover{
+    color:hsl(5, 85%, 63%)
+  }
+
+  aside .heading{
+    color: var(--Soft-orange);
+  }
+
+  .h2{color: rgb(212, 209, 209);}
+  
+
+  header{animation:1s ease-in .5s slide;}
+
+
+  
+  @keyframes slide {
+    0%{
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+
+    100%{
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidex {
+  0%{
+      transform: translatex(-200vh);
+      opacity: 0;
+  }
+
+  100%{
+
+      transform: translatex(0);
+      opacity: 1;
+  }
+}
+
+aside{animation:1s ease-out .5s slidex;}
+
+
+
+
+
+ 
+ 
